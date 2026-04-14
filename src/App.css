@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+header .badge {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #818cf8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+header p {
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.stage-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.stage-card .icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.stage-card h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.stage-card p {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.flow {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+}
+
+.flow h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #818cf8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.flow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flow-step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.flow-step .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-blue  { background-color: #818cf8; }
+.dot-yellow { background-color: #fbbf24; }
+.dot-green { background-color: #4ade80; }
+
+footer {
+  margin-top: 2.5rem;
+  color: #475569;
+  font-size: 0.8rem;
+  text-align: center;
+}

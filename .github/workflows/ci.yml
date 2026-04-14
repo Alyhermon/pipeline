@@ -1,0 +1,33 @@
+name: CI - Lint y Build
+
+# Se ejecuta en cada push y en cada pull request
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Lint y Build
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Descargar el código del repositorio
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      # 2. Instalar Node.js
+      - name: Configurar Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      # 3. Instalar dependencias
+      - name: Instalar dependencias
+        run: npm install
+
+      # 4. Revisar el código con ESLint
+      - name: Lint (ESLint)
+        run: npm run lint
+
+      # 5. Compilar la app con Vite
+      - name: Build (Vite)
+        run: npm run build
