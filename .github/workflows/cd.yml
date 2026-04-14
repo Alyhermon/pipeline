@@ -6,6 +6,11 @@ on:
     branches:
       - main
 
+# Variables de entorno para que la CLI de Vercel sepa a qué proyecto apuntar
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
 jobs:
   deploy:
     name: Build y Deploy a Producción
@@ -36,6 +41,5 @@ jobs:
         run: npm install -g vercel
 
       # 6. Desplegar a producción en Vercel
-      # VERCEL_TOKEN es un secret guardado en GitHub (Settings > Secrets > Actions)
       - name: Deploy a Vercel (producción)
         run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
