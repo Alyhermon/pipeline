@@ -21,7 +21,7 @@ function App() {
     <div className="container">
       <header>
         <span className="badge">Proyecto Universitario</span>
-        <h1>Pipeline CI/CD 2</h1>
+        <h1>Pipeline CI/CD - Los Intocables</h1>
         <p>
           Este proyecto demuestra un pipeline de <strong>Integración y Entrega Continua</strong>{' '}
           usando <strong>GitHub Actions</strong> y <strong>Vercel</strong>. Cada push al
